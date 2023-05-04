@@ -9,20 +9,16 @@ const links = [
       label: "Home"
     },
     {
-      to: "/about",
-      label: "About"
+      to: "/catalouge",
+      label: "Catalouge"
     },
     {
       to: "/contact",
       label: "Contact"
     },
     {
-      to: "/products",
-      label: "Products"
-    },
-    {
-      to: "/login",
-      label: "Login"
+      to: "/deliveryandpayment",
+      label: "DeliveryAndPayment"
     }
   ];
 
@@ -40,9 +36,7 @@ function Navbar() {
         <NavLink
           key={link.to}
           to={link.to}
-          //  style ={({isActive})=>{
-          //  return isActive? activestyling:defaultstyling
-          //  }}
+       
           className={({ isActive }) => {
             return isActive ? styles.activestyle : styles.defaultstyle;
           }}
