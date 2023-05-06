@@ -5,15 +5,23 @@ import img3 from "../Photos/img3.png"
 import img4 from "../Photos/img4.png"
 import img6 from "../Photos/img6.png"
 import img5 from "../Photos/img5.png"
+import img7 from "../Photos/photo7.png"
+import img8 from "../Photos/photo8.png"
+import img9 from "../Photos/photo9.png"
+import img10 from "../Photos/photo10.png"
+import img11 from "../Photos/photo11.png"
+import img12 from "../Photos/photo12.png"
+import img13 from "../Photos/photo13.png"
+import img14 from "../Photos/photo14.png"
+import img15 from "../Photos/photo15.png"
 export default function Home() {
   return (
     <>
-   <div style={{marginLeft:"40px", border:"1px solid red",marginRight:"40px"}}>
-    <div style={{display:"flex",gap:"50px"}}>
-      
-
-      <div style={{marginTop:"100px"}} >
-        <h2 style={{color:"darkgreen"}}>Create a green paradise right at home</h2>
+   <div style={{ border:"1px solid red",width:"90%",margin:"auto",textAlign:"center"}}>
+    <div style={{display:"flex",justifyContent:"space-around",border:"1px solid green"}}>
+    
+      <div style={{border:"1px solid green"}} >
+        <h2 style={{color:"darkgreen",fontSize:"50px"}}>Create <br /> a green paradise <br /> right at home</h2>
         <p>20% of the profit goes to help the Armed Forces of Ukraine</p>
         <button style={{backgroundColor:"darkgreen",color:"white",borderRadius:"5px",border:"darkgreen"}}>Catalouge</button>
       </div>
@@ -23,7 +31,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div style={{display:"flex"}}>
+    <div style={{display:"flex",justifyContent:"space-around"}}>
       <img src={img2} alt="" />
       <div>
         <h2>About us</h2>
@@ -35,7 +43,7 @@ export default function Home() {
 
     <div>
       <h3>Popular Products</h3>
-      <div style={{display:"flex"}} >
+      <div style={{display:"flex",justifyContent:"space-around"}} >
         <div>
           <img src={img3} alt=""  />
           <div  style={{display:"flex",gap:"100px",justifyContent:"space-around" }}>
@@ -80,28 +88,60 @@ export default function Home() {
 
     </div>
 
-    <div style={{display:"flex",gap:"100px",justifyContent:"space-around" }}>
+    <div style={{display:"flex",justifyContent:"space-around"}}>
       <h3>Categories</h3>
       <button style={{backgroundColor:"darkgreen",color:"white",borderRadius:"5px",border:"darkgreen"}}>Catalouge</button>
     </div>
 
-    <div style={{display:"flex",gap:"100px",justifyContent:"space-around" }}>
+    <div style={{display:"flex"}}>
       <div>
-        <img src={img3} alt="" />
+        <img src={img9} alt="" width="100%" />
         <p>HousePlants</p>
       </div>
       <div>
-        <img src={img3} alt="" />
+        <img src={img10} alt="" width="100%" />
         <p>HousePlants</p>
       </div>
       <div>
-        <img src={img3} alt="" />
+        <img src={img11} alt="" width="100%" />
         <p>HousePlants</p>
       </div>
       <div>
-        <img src={img3} alt="" />
+        <img src={img12} alt=""  width="100%"/>
         <p>HousePlants</p>
       </div>
+    </div>
+
+
+    <div style={{display:"flex",justifyContent:"space-around"}}>
+
+      <div>
+       <img src={img7} alt="" />
+      </div>
+      <div>
+       <h2>Delivery and Payment</h2>
+       <p>We package our plants securily yet sustainably by reusing <br />boxes,paper (newspaper),etc.
+       Deleivery is carried out <br /> to all cities of Ukrain , except for the occupied ones. <br /> Pickup is possible in Kyiv.</p>
+
+      </div>
+    </div>
+
+    <div style={{display:"flex",justifyContent:"space-around"}}>
+      <div><h1>Find us on Instagram</h1></div>
+      <button style={{borderRadius:"5px",color:"darkgreen",borderColor:"darkgreen"}}>More Details</button>
+    </div>
+
+    <div style={{display:"flex",justifyContent:"space-around",width:"100%"}}>
+      <img src={img13} alt="" />
+      <img src={img14} alt="" />
+      
+      <img src={img15} alt="" />
+      
+      
+    </div>
+
+    <div>
+      <img src={img8} alt="" />
     </div>
 
 
